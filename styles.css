@@ -1,0 +1,63 @@
+:root {
+    --hospital-green: #198754;
+    --hospital-dark: #0f5132;
+    --hospital-light: #f4fbf7;
+}
+
+body {
+    background: var(--hospital-light);
+    color: #24332b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand img { width: 42px; height: 42px; object-fit: contain; }
+
+.hero {
+    background: linear-gradient(135deg, #198754, #0f5132);
+    color: white;
+    border-radius: 0 0 28px 28px;
+}
+
+.hero-image {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border: 6px solid rgba(255,255,255,.8);
+}
+
+.section-card {
+    border: 0;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(15,81,50,.08);
+    height: 100%;
+}
+
+.service-icon {
+    width: 52px;
+    height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #d1e7dd;
+    color: var(--hospital-dark);
+    font-size: 1.35rem;
+}
+
+.page-title { color: var(--hospital-dark); font-weight: 700; }
+
+.form-card {
+    max-width: 620px;
+    margin: 40px auto;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+footer { background: #0f5132; color: white; }
+
+.table thead th { white-space: nowrap; }
+
+@media (max-width: 576px) {
+    .hero-image { width: 160px; height: 160px; }
+}

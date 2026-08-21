@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ADP Hospital Management System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="home.html"><img src="hospitalcross.png" alt="ADP Hospital logo">ADP Hospital</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="catalogue.html">Services</a></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Account</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="login.html">Login</a></li><li><a class="dropdown-item" href="register.html">Register</a></li></ul></li>
+      </ul>
+      <form class="d-flex" role="search" onsubmit="return false;"><div class="input-group"><span class="input-group-text"><i class="bi bi-search"></i></span><input class="form-control" id="globalSearch" type="search" placeholder="Search services..."></div></form>
+    </div>
+  </div>
+</nav>
+
+<header class="hero py-5">
+  <div class="container py-4">
+    <div class="row align-items-center g-4">
+      <div class="col-12 col-md-7">
+        <span class="badge bg-light text-success mb-3">Integrated Healthcare Platform</span>
+        <h1 class="display-5 fw-bold">ADP Hospital Management System</h1>
+        <p class="lead">A responsive portal for patient administration, scheduling, diagnostics, pharmacy, billing and hospital operations.</p>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="catalogue.html" class="btn btn-light btn-lg"><i class="bi bi-grid-3x3-gap me-2"></i>Explore Services</a>
+          <a href="register.html" class="btn btn-outline-light btn-lg">Create Account</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-5 text-center">
+        <img src="BACK-removebg-preview.png" class="hero-image rounded-circle img-fluid" alt="Healthcare illustration">
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container py-5">
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <i class="bi bi-check-circle-fill me-2"></i><strong>Welcome!</strong> Our hospital portal is available for service browsing and account access.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <section class="mb-5">
+    <div class="text-center mb-4"><h2 class="page-title">Hospital Services</h2><p class="text-muted">Responsive Bootstrap grid layout for quick access.</p></div>
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-md-4"><div class="card section-card p-4"><span class="service-icon mb-3"><i class="bi bi-heart-pulse"></i></span><h5>General Medicine</h5><p class="text-muted mb-0">General health checkups and medical consultation.</p></div></div>
+      <div class="col-12 col-sm-6 col-md-4"><div class="card section-card p-4"><span class="service-icon mb-3"><i class="bi bi-activity"></i></span><h5>Cardiology</h5><p class="text-muted mb-0">Heart consultation and cardiovascular care.</p></div></div>
+      <div class="col-12 col-sm-6 col-md-4"><div class="card section-card p-4"><span class="service-icon mb-3"><i class="bi bi-person-walking"></i></span><h5>Orthopedics</h5><p class="text-muted mb-0">Bone and joint care services.</p></div></div>
+    </div>
+  </section>
+
+  <section class="row g-4">
+    <div class="col-12 col-md-8"><div class="card section-card p-4"><h3>About ADP Systems</h3><p class="mb-0">ADP Systems brings patient administration, clinical documentation, scheduling, billing, diagnostics, pharmacy operations, inventory management and reporting into one portal. The responsive design makes the interface easier to use across desktop, tablet and mobile screens.</p></div></div>
+    <div class="col-12 col-md-4"><div class="card section-card p-4"><h3>Contact Us</h3><p class="mb-2"><i class="bi bi-geo-alt me-2"></i>ADP Center, Mumbai</p><p class="mb-2"><i class="bi bi-telephone me-2"></i>+91 98765 43210</p><p class="mb-0"><i class="bi bi-envelope me-2"></i>adpsystems@gmail.com</p></div></div>
+  </section>
+</main>
+
+<footer class="py-4 mt-4"><div class="container text-center"><small>© 2026 ADP Hospital Management System</small></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
