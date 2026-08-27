@@ -1,6 +1,25 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Login | ADP Hospital</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-success"><div class="container"><a class="navbar-brand fw-bold" href="home.html">ADP Hospital</a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="nav"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="home.html">Home</a></li><li class="nav-item"><a class="nav-link" href="catalogue.html">Services</a></li><li class="nav-item"><a class="nav-link active" href="login.html">Login</a></li><li class="nav-item"><a class="nav-link" href="register.html">Register</a></li></ul></div></div></nav>
-<main class="container"><div class="card form-card p-4 p-md-5"><div class="text-center mb-4"><img src="hospitalcross.png" class="rounded-circle" width="80" height="80" alt="Hospital logo"><h2 class="page-title mt-3">Login</h2><p class="text-muted">Access your hospital portal</p></div><form onsubmit="showLogin(event)"><label class="form-label">Email</label><div class="input-group mb-3"><span class="input-group-text"><i class="bi bi-envelope"></i></span><input type="email" class="form-control" required placeholder="name@example.com"></div><label class="form-label">Username</label><div class="input-group mb-3"><span class="input-group-text"><i class="bi bi-person"></i></span><input type="text" class="form-control" required placeholder="Username"></div><label class="form-label">Password</label><div class="input-group mb-4"><span class="input-group-text"><i class="bi bi-lock"></i></span><input type="password" class="form-control" required placeholder="Password"></div><div class="d-grid gap-2 d-sm-flex"><button class="btn btn-success flex-fill" type="submit">Login</button><button class="btn btn-outline-secondary flex-fill" type="reset">Clear</button></div></form><div id="loginAlert" class="mt-3"></div></div></main>
-<script>function showLogin(e){e.preventDefault();document.getElementById('loginAlert').innerHTML='<div class="alert alert-info alert-dismissible fade show">Login form submitted successfully for demonstration.<button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>';}</script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login | ADP Hospital</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm">
+<div class="container">
+<a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="home.html"><span class="brand-mark"><i class="bi bi-plus-lg"></i></span> ADP Hospital</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="catalogue.html">Services</a></li>
+<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Account</a>
+<ul class="dropdown-menu"><li><a class="dropdown-item" href="login.html">Login</a></li><li><a class="dropdown-item" href="register.html">Register</a></li></ul></li>
+</ul>
+<form class="d-flex" role="search" onsubmit="return false;"><div class="input-group">
+<span class="input-group-text"><i class="bi bi-search"></i></span><input class="form-control" type="search" placeholder="Search services..." id="globalSearch">
+</div></form>
+</div></div></nav>
+
+<main class="container"><div class="card form-card p-4 p-md-5"><div class="text-center mb-4"><img src="hospital-logo.svg" class="rounded-circle img-fluid" width="90" height="90" alt="Hospital logo"><h2 class="page-title mt-3">Login</h2><p class="text-muted">ADP Hospital account access</p></div>
+<form onsubmit="showMessage(event)"><label class="form-label">Email</label><div class="input-group mb-3"><span class="input-group-text"><i class="bi bi-envelope"></i></span><input type="email" class="form-control" required placeholder="name@example.com"></div>
+<label class="form-label">Username</label><div class="input-group mb-3"><span class="input-group-text"><i class="bi bi-person"></i></span><input type="text" class="form-control" required placeholder="Username"></div>
+<label class="form-label">Password</label><div class="input-group mb-4"><span class="input-group-text"><i class="bi bi-lock"></i></span><input type="password" class="form-control" required placeholder="Password"></div>
+<div class="d-grid gap-2 d-sm-flex"><button class="btn btn-success flex-fill" type="submit">Submit</button><button class="btn btn-outline-secondary flex-fill" type="reset">Clear</button></div></form>
+<div id="formAlert" class="mt-3"></div></div></main><footer class="py-4"><div class="container text-center"><small>© 2026 ADP Hospital Management System</small></div></footer>
+<script>function showMessage(e){e.preventDefault();document.getElementById('formAlert').innerHTML='<div class="alert alert-info alert-dismissible fade show">Form submitted successfully for demonstration.<button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>';}</script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script></body></html>
